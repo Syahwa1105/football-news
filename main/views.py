@@ -36,7 +36,7 @@ def show_news(request, id):
 
     return render(request, "news_detail.html", context)
 
-#tambahan tutorial 2
+# tambahan di tutorial 2
 def show_xml(request):
      news_list = News.objects.all()
      xml_data = serializers.serialize("xml", news_list)
