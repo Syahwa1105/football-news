@@ -35,7 +35,7 @@ ALLOWED_HOSTS = ["localhost", "127.0.0.1", "qoriana-syahwa-footballnews.pbp.cs.u
 ...
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://qoriana-syahwa-footballnews.pbp.cs.ui.ac.id/"
+    "https://qoriana-syahwa-footballnews.pbp.cs.ui.ac.i"
 ]
 
 
