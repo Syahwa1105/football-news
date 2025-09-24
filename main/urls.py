@@ -7,8 +7,10 @@ from main.views import show_main, create_news, show_news, show_xml, show_json, s
 from main.views import register
 from main.views import login_user
 from main.views import logout_user
-
+#tutorial4
+from main.views import edit_news
 app_name = 'main'
+from main.views import delete_news
 
 urlpatterns = [
     path('', show_main, name='show_main'),
@@ -22,4 +24,7 @@ urlpatterns = [
     path('register/', register, name='register'),
     path('login/', login_user, name='login'),
     path('logout/', logout_user, name='logout'),
+    path('news/<uuid:id>/edit', edit_news, name='edit_news'),
+    path('news/<uuid:id>/delete', delete_news, name='delete_news'),
+
 ]
